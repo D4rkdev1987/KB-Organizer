@@ -1,0 +1,2 @@
+class FullTime < ApplicationRecord
+end
