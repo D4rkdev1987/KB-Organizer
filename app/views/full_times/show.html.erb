@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @full_time.name %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @full_time.start_date %>
+</p>
+
+<%= link_to 'Edit', edit_full_time_path(@full_time) %> |
+<%= link_to 'Back', full_times_path %>

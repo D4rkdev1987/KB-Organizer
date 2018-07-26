@@ -3,7 +3,7 @@
 ### TO-DO
 
 1. Associations / Scaffolds
-  * Part_Time
+   Part_Time
     * has_many Students
   * Full_Time
     * has_many Students

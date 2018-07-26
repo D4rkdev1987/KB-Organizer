@@ -1,0 +1,27 @@
+<%= form_with(model: full_time, local: true) do |form| %>
+  <% if full_time.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(full_time.errors.count, "error") %> prohibited this full_time from being saved:</h2>
+
+      <ul>
+      <% full_time.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :full_time_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.date_select :start_date, id: :full_time_start_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
